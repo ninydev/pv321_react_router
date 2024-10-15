@@ -1,6 +1,14 @@
 import ipad from './../assets/img/ipad.png'
+import MyBreadcrumb from "../layouts/MyBreadcrumb";
+import {usePageContext} from "../context/PageContext";
 
-export default function AboutPage () {
+export default function AboutPage (props) {
+
+    props.setByPropsPageName(' About Write in PageComponent  ')
+
+    const { setByContextPageName } = usePageContext();
+    setByContextPageName('About by Context from Component');
+
     return(
         <section className="about-section text-center" id="about">
             <div className="container px-4 px-lg-5">

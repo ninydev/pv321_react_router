@@ -1,4 +1,12 @@
-export default function IndexPage () {
+import {usePageContext} from "../context/PageContext";
+
+export default function IndexPage (props) {
+
+    props.setByPropsPageName(' Home ')
+
+    const { setByContextPageName } = usePageContext();
+    setByContextPageName('Home by Context from Component');
+
     return (
         <header className="masthead">
             <div className="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">

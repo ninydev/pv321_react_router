@@ -3,10 +3,10 @@ import MyContact from "./MyContact";
 import MyFooter from "./MyFooter";
 import {Outlet} from "react-router-dom";
 
-export default function MainLayout () {
+export default function MainLayout (props) {
     return(
         <>
-            <MyHeader />
+            <MyHeader byPropsPageName={props.byPropsPageName} />
 
             <Outlet />
 
