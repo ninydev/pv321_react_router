@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 export default function MyContact() {
     return (<section className="contact-section bg-black">
         <div className="container px-4 px-lg-5">
@@ -34,7 +37,8 @@ export default function MyContact() {
                 </div>
             </div>
             <div className="social d-flex justify-content-center">
-                <a className="mx-2" href="#!"><i className="fab fa-twitter"></i></a>
+                <a target="_top" className="mx-2" href="https://www.linkedin.com/in/NykytinO"><FontAwesomeIcon icon="fa-brands fa-linkedin"/></a>
+                    <a className="mx-2" href="#!"><i className="fab fa-twitter"></i></a>
                 <a className="mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
                 <a className="mx-2" href="#!"><i className="fab fa-github"></i></a>
             </div>
